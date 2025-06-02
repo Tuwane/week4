@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+<h1>Change String to Number</h1>
+
+<p id="output">Results :</p>
+
+
+<script>
+
+var text1 = "ten";
+var text2 = "2";
+
+var num1 = stringTonumber(text1);
+var num2 = stringTonumber(text2);
+
+if(isNaN(num1) || isNaN(num2))
+{
+document.getElementById("output").innerHTML="Invalid text no number entered ";
+
+}
+else
+{
+document.getElementById("output").innerHTML= num1 + num2;
+}
+function stringTonumber(text)
+{
+	return parseInt(text);
+}
+</script>
+</body>
+</html>

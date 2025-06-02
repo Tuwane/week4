@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="file1html.js"></script>
+<link rel="stylesheet"type="Text/css" href="style1.css">
+
+</head>
+<body>
+
+<h1>The programe to login </h1>
+
+<div id="box1">
+<p id="massage"><h4>Enter you details</h4></p>
+<p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Please login</p>
+<div id=box2>
+<form>
+<label for="usernameInput "> Username:</label><input type="text" id="usernameInput"><br>
+<label for="useremailInput">password :</label><input type="text" id="passwordInput"><br>
+
+<a href="#" onclick="VerifyUser()">login</a>
+</div>
+</div>
+
+<script>
+
+
+
+
+function VerifyUser()
+{
+	var username = document.getElementById("usernameInput").value;
+	var password = document.getElementById("passwordInput").value;
+	
+	CheckUserCreds(username,password);
+} 
+function CheckUserCreds(username,password)
+{
+	var systemUsername = "Mohapi";
+	var systemPassword = "1984";
+if(username == systemUsername && password == systemPassword)
+{
+document.getElementById("massage").innerHTML="Correct logging you in ...";
+}
+else
+{
+document.getElementById("massage").innerHTML="<h4>Incorrect loggings try again..</h4>";
+}
+
+}
+</script>
+</body>
+</html>
+
+
+
